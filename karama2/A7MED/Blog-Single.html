@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Blog-Single</title>
+        
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+        <!-- Google Fonts Roboto -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+        />
+        <!-- CDN bootstap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <!-- MDB -->
+        <link rel="stylesheet" href="css/mdb.min.css" />
+        <!-- Aos Library -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- bootstrap icon -->
+        <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+        <!-- link style -->
+        <link rel="stylesheet" href="css/darkMode.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style2.css">
+        
+    </head>
+    <body class="body">
+        <!-- Loader -->
+        <div class="loader-wrap col-lg-12 col-md-12 col-sm-12" id="loader-wrap">
+            <div class="loader container" id="loader"></div>
+        </div>
+        <!-- End Loader -->
+        <!-- Cursor -->
+        <div class="custom-cursor"></div>
+        <div class="custom-cursor2"></div>
+        <!-- End cursor -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light shadow-0 w-100 position-sticky top-0">
+        <div class="container-fluid">
+            <div class=" navbar-collapse HeaderThree " id="navbarSupportedContent">
+                <h1 class="navbar-brand mt-2 mt-lg-0 position-relative" href="#">
+                <a  href="http://127.0.0.1:5500/index.html" target="_blank" class="navbarLogo">
+                    Three <span class="text-white">Academy</span>
+                </a>
+                </h2>
+            </div>
+            <!-- Right elements -->
+            <div class="align-items-center justify-content-center AcademyLinks mt-3">
+                <ul id="Links" class="d-flex align-content-center justify-content-center gap-5 fw-bold">
+                    <li><a class="nav-link scrollto"  href="http://127.0.0.1:5500/index.html" target="_blank">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+                    <!-- Dark And Light Mode -->
+                    <li>
+                        <label class="switch">
+                            <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+                            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+                            <input type="checkbox" class="input">
+                            <span class="slider"></span>
+                        </label>
+                    </li>
+                    <!-- End Dark And Light Mode -->
+                    <li><a class="nav-link active"  href="http://127.0.0.1:5500/karama2/Blog.html" target="_blank">Blog</a></li>
+                </ul>
+            </div>
+                <ul class="Links" data-aos="fade-down">
+                    <li><a class="nav-link scrollto active" href="http://127.0.0.1:5500/index.html" target="_blank">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+                    <!-- Dark And Light Mode -->
+                    <li>
+                        <label class="switch">
+                            <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+                            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+                            <input type="checkbox" class="input">
+                            <span class="slider"></span>
+                        </label>
+                    </li>
+                    <!-- End Dark And Light Mode -->
+                    <li><a class="nav-link  " href="http://127.0.0.1:5500/karama2/Blog.html" target="_blank">Blog</a></li>
+                </ul>
+            <a class="IconDots" href="#" id="Link">
+                <span  class="dots position-absolute top-50"></span>
+            </a>
+            <!-- Right elements -->
+        </div>
+        </nav>
+        <!-- End Navbar -->
+    <!-- ======= Breadcrumbs ======= -->
+        <section class="sec1 overflow-hidden" id="sec1" >    
+        <div class="container col-lg-12 col-md-12 col-sm-12">    
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="http://127.0.0.1:5500/index.html" target="_blank">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Blog</a></li>
+                </ol>
+                <h2>Blog Single</h2>
+            </nav>
+        </div>
+        </section>
+    <!-- End Breadcrumbs -->
+    <!-- Arrow -->
+        <div class="up" id="up"><i class="fa-solid fa-arrow-up fa-beat-fade fa-2xs"></i></div>
+    <!-- Arrow -->
+    <!-- Card 1 And Side Space -->
+        <section class="blog_single container ">   
+                <div class="card mb-3 col-lg-8 col-md-12 col-sm-12" data-aos="fade-down" data-aos-duration="900">
+                    <img src="img/blog-1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h1 class="card-title fw-semibold">
+                            Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia
+                        </h1>
+                        <div class="entry-meta mt-3 mb-3">
+                            <ul>
+                                <li class="d-flex text-base"><i class="bi bi-person"></i> <a href="blog-single.html">John Doe</a></li>
+                                <li class="d-flex text-base"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                                <li class="d-flex text-base"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">12 Comments</a></li>
+                            </ul>
+                        </div>
+                        <p class="card-text text-md mb-8 p">
+                            Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
+                            Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+                        </p>
+                        <p class="card-text text-md mb-4 p">
+                            Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
+                        </p>
+                    </div>
+                    <div class="sub  h-45 rounded-xl text-2xl italic tracking-wide leading-normal" data-aos-duration="900">
+                        <p class="p">
+                            Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut.
+                            Aut eos aliquam doloribus minus autem quos.
+                        </p>
+                    </div>
+                    <div class="last_div mt-4">
+                        <p class="p">
+                            Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis.
+                            Voluptate ex rerum assumenda dolores nihil quaerat. Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque.
+                            Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.
+                        </p>
+                        <h1 class="mt-4">
+                            Et quae iure vel ut odit alias.
+                        </h1>
+                        <p class="mt-4">
+                            Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui.
+                            Voluptatem laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui. Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor.
+                            Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea.
+                            Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
+                        </p>
+                        <img src="img/blog-inside-post.jpg" class="mt-4">
+                        <h1 class="mt-4">
+                            Ut repellat blanditiis est dolore sunt dolorum quae.
+                        </h1>
+                        <p class="mt-4 p">
+                            Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro autem.
+                            Consectetur sed excepturi sint non placeat quia repellat incidunt labore.
+                            Autem facilis hic dolorum dolores vel. Consectetur quasi id et optio praesentium aut asperiores eaque aut.
+                            Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. Veritatis numquam ut illum ut a quam vitae.
+                        </p>
+                        <p class="mt-4 p">
+                            Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
+                        </p>
+                        <hr class="mt-4 mb-4 p">
+                        <div class="entry-footer mb-4">
+                            <ul class="cats">
+                                <li><i class="bi bi-folder"></i></li>
+                                <li><a href="#">Business</a></li>
+                            </ul>
+                            <ul class="tags">
+                                <li><i class="bi bi-tags"></i></li>
+                                <li><a href="#">Creative ,  </a></li>
+                                <li><a href="#">Tips ,  </a></li>
+                                <li><a href="#">Marketing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- side slide -->
+                <div class="card_side col-lg-4 col-md-12 col-sm-12 " data-aos="fade-up" data-aos-duration="900">
+                    <!-- search area -->
+                    <div class="search_area mb-3">
+                        <div class="relative mb-4 flex w-full flex-wrap items-stretch">
+                            <input type="text" placeholder="Search" class="search" id="searchBox">
+                            <!--Search button-->
+                            <button class="search-button">
+                                <i class="bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- end search area -->
+                    <h3 class="text-xl fw-bold mt-4">Categories</h3>
+                    <ul id="ul1">
+                        <li><a href="#">Creative  </a><span>  (8)</span></li>
+                        <li><a href="#">Web Design Services </a><span>  (16)</span></li>
+                        <li><a href="#">Responsive Website Development   </a><span>  (17)</span></li>
+                        <li><a href="#">E-commerce Solutions  </a><span>  (41)</span></li>
+                        <li><a href="#">Custom Web Application Development  </a><span>  (9)</span></li>
+                        <li><a href="#">Design  </a><span>  (22)</span></li>
+                        <li><a href="#">Mobile App Development  </a><span>  (33)</span></li>
+                        <li><a href="#">UI/UX Design Services  </a><span>  (25)</span></li>
+                        <li><a href="#">General  </a><span>  (25)</span></li>
+                        <li><a href="#">Backend Development  </a><span>  (24)</span></li>
+                        <li><a href="#">Frontend Development  </a><span>  (29)</span></li>
+                        <li><a href="#">Lifestyle  </a><span>  (12)</span></li>
+                        <li><a href="#">CMS Development  </a><span>  (30)</span></li>
+                        <li><a href="#">Mobile App Design  </a><span>  (14)</span></li>
+                        <li><a href="#">Website Maintenance Services  </a><span>  (11)</span></li>
+                        <li><a href="#">E-commerce Platform Development  </a><span>  (5)</span></li>
+                        <li><a href="#">Cross-platform App Development   </a><span>  (5)</span></li>
+                        <li><a href="#">SEO Services   </a><span>  (5)</span></li>
+                    </ul>
+                    <h4 class="text-xl fw-bold mt-4">Recent Posts</h4>
+                    <div class="posts">
+                        <div class="flex">
+                            <img src="img/blog-recent-1.jpg" alt="Image">
+                            <div class="posts_text">    
+                                <p class="text-md fw-bold"><a href="#"> Nihil blanditiis at in nihil autem</a></p>
+                                <span class="fst-italic">Jan 1, 2020</span>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <img src="img/blog-recent-2.jpg" alt="Image">
+                            <div class="posts_text">    
+                                <p class="text-md fw-bold"><a href="#"> Quidem autem et impedit</a></p>
+                                <span class="fst-italic">Jan 1, 2020</span>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <img src="img/blog-recent-3.jpg" alt="Image">
+                            <div class="posts_text">    
+                                <p class="text-md fw-bold"><a href="#"> Id quia et et ut maxime similique occaecati ut</a></p>
+                                <span class="fst-italic">Jan 1, 2020</span>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <img src="img/blog-recent-4.jpg" alt="Image">
+                            <div class="posts_text">    
+                                <p class="text-md fw-bold"><a href="#"> Laborum corporis quo dara net para </a></p>
+                                <span class="fst-italic">Jan 1, 2020</span>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <img src="img/blog-recent-5.jpg" alt="Image">
+                            <div class="posts_text">    
+                                <p class="text-md fw-bold"><a href="#"> Et dolores corrupti quae illo quod dolor</a></p>
+                                <span class="fst-italic">Jan 1, 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Tags">
+                        <h3 class="text-xl fw-bold mb-3 mt-1">Tags</h3>
+                        <div class="buttons">
+                            <button>App</button>
+                            <button>IT</button>
+                            <button>Business</button>
+                            <button>Mac</button>
+                            <button>Design</button>
+                            <button>Office</button>
+                            <button>Creative</button>
+                            <button>Studio</button>
+                            <button>Smart</button>
+                            <button>Tips</button>
+                            <button>Marketing</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    <!-- card 2 -->
+        <section class="container sec2 overflow-hidden">
+            <div class=" card mb-3 col-lg-8 col-md-12 col-sm-12 drop-shadow-2xl" data-aos="fade-right" data-aos-duration="900">
+                <div class="row g-0 ">
+                    <img src="img/blog-author.jpg" class="img-fluid col-md-2 mt-4 drop-shadow-lg">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bolder text-2xl ">
+                                Jane Smith
+                            </h5>
+                            <div class="social-links">
+                                <a href="https://twitters.com/#"><i class="bi bi-twitter"></i></a>
+                                <a href="https://facebook.com/#"><i class="bi bi-facebook"></i></a>
+                                <a href="https://instagram.com/#"><i class="biu bi-instagram"></i></a>
+                            </div>
+                            <p class="card-text fst-italic p">
+                                Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium.
+                                Quas repellat voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- End card 2 -->
+    <!-- Comments -->
+        <section class="comments container">
+        <!-- comment 1 -->
+            <h1 class="text-3xl font-bold mt-4 mb-5">8 Comments</h1>
+            <div class="c1 comment1 col-lg-8 col-md-12 col-sm-12 mb-4"
+            data-aos="fade-up" data-aos-duration="900">
+                <img src="img/comments-1.jpg" class="img_comment1 rounded-circle" width="60" height="60">
+                <div class="content">
+                    <h3>
+                        <a href="#" class="name">Georgia Reader</a> 
+                        <a href="#" class="reply">
+                            <i class="bi bi-reply-fill"></i>
+                            Reply
+                        </a>
+                    </h3>
+                    <p class="date">01 Jan, 2020</p>
+                    <p class="comment p">
+                        Et rerum totam nisi. Molestiae vel quam dolorum vel voluptatem et et.
+                        Est ad aut sapiente quis molestiae est qui cum soluta. Vero aut rerum vel.
+                        Rerum quos laboriosam placeat ex qui. Sint qui facilis et.
+                    </p>
+                </div>
+            </div>
+            <!-- comment 2 -->
+            <div class="c2 comment1 col-lg-8 col-md-12 col-sm-12 mt-3"
+            data-aos="fade-up" data-aos-duration="900">
+                <img src="img/comments-2.jpg" class="img_comment1 rounded-circle" width="60" height="60">
+                <div class="content">
+                    <h3>
+                        <a href="#" class="name">Aron Alvarador</a> 
+                        <a href="#" class="reply">
+                            <i class="bi bi-reply-fill"></i>
+                            Reply
+                        </a>
+                    </h3>
+                    <p class="date">01 Jan, 2020</p>
+                    <p class="comment p">
+                        Ipsam tempora sequi voluptatem quis sapiente non.
+                        Autem itaque eveniet saepe. Officiis illo ut beatae.
+                    </p>
+                </div>
+            </div>
+            <!-- comment 3 -->
+            <div class="c3 comment1 col-lg-8 col-md-12 col-sm-12 mt-3"
+            data-aos="fade-up" data-aos-duration="900">
+                <img src="img/comments-3.jpg" class="img_comment1 rounded-circle" width="60" height="60">
+                <div class="content">
+                    <h3>
+                        <a href="#" class="name">Lynda Small</a> 
+                        <a href="#" class="reply">
+                            <i class="bi bi-reply-fill"></i>
+                            Reply
+                        </a>
+                    </h3>
+                    <p class="date">01 Jan, 2020</p>
+                    <p class="comment p">
+                        Enim ipsa eum fugiat fuga repellat. Commodi quo quo dicta.
+                        Est ullam aspernatur ut vitae quia mollitia id non. Qui ad quas nostrum rerum sed necessitatibus aut est. 
+                        Eum officiis sed repellat maxime vero nisi natus. Amet nesciunt nesciunt qui illum omnis est et dolor recusandae. 
+                        Recusandae sit ad aut impedit et. Ipsa labore dolor impedit et natus in porro aut. 
+                        Magnam qui cum. Illo similique occaecati nihil modi eligendi. Pariatur distinctio labore omnis incidunt et illum. 
+                        Expedita et dignissimos distinctio laborum minima fugiat. Libero corporis qui. Nam illo odio beatae enim ducimus. 
+                        Harum reiciendis error dolorum non autem quisquam vero rerum neque.
+                    </p>
+                </div>
+            </div>
+            <!-- comment 4 -->
+            <div class="c4 comment1 col-lg-8 col-md-12 col-sm-12 mt-3"
+            data-aos="fade-up" data-aos-duration="900">
+                <img src="img/comments-4.jpg" class="img_comment1 rounded-circle" width="60" height="60">
+                <div class="content">
+                    <h3>
+                        <a href="#" class="name">Sianna Ramsay</a> 
+                        <a href="#" class="reply">
+                            <i class="bi bi-reply-fill"></i>
+                            Reply
+                        </a>
+                    </h3>
+                    <p class="date">01 Jan, 2020</p>
+                    <p class="comment p">
+                        Et dignissimos impedit nulla et quo distinctio ex nemo. Omnis quia dolores cupiditate et. 
+                        Ut unde qui eligendi sapiente omnis ullam. Placeat porro est commodi est officiis voluptas repellat quisquam possimus. 
+                        Perferendis id consectetur necessitatibus.
+                    </p>
+                </div>
+            </div>
+            <!-- comment 5 -->
+            <div class="c5 comment1 col-lg-8 col-md-12 col-sm-12 mt-3"
+            data-aos="fade-up" data-aos-duration="900">
+                <img src="img/comments-5.jpg" class="img_comment1 rounded-circle" width="60" height="60">
+                <div class="content">
+                    <h3>
+                        <a href="#" class="name">Nolan Davidson</a> 
+                        <a href="#" class="reply">
+                            <i class="bi bi-reply-fill"></i>
+                            Reply
+                        </a>
+                    </h3>
+                    <p class="date">01 Jan, 2020</p>
+                    <p class="comment p">
+                        Distinctio nesciunt rerum reprehenderit sed.
+                        Iste omnis eius repellendus quia nihil ut accusantium tempore.
+                        Nesciunt expedita id dolor exercitationem aspernatur aut quam ut. 
+                        Voluptatem est accusamus iste at.
+                        Non aut et et esse qui sit modi neque.
+                        Exercitationem et eos aspernatur. Ea est consequuntur officia beatae ea aut eos soluta.
+                        Non qui dolorum voluptatibus et optio veniam. Quam officia sit nostrum dolorem.
+                    </p>
+                </div>
+            </div>
+            <!-- comment 6 -->
+            <div class="c6 comment1 col-lg-8 col-md-12 col-sm-12 mt-3"
+            data-aos="fade-up" data-aos-duration="900">
+                <img src="img/comments-6.jpg" class="img_comment1 rounded-circle" width="60" height="60">
+                <div class="content">
+                    <h3>
+                        <a href="#" class="name">Kay Duggan</a> 
+                        <a href="#" class="reply">
+                            <i class="bi bi-reply-fill"></i>
+                            Reply
+                        </a>
+                    </h3>
+                    <p class="date" id="Date">01 Jan, 2020</p>
+                    <p class="comment p">
+                        Dolorem atque aut. Omnis doloremque blanditiis quia eum porro quis ut velit tempore. 
+                        Cumque sed quia ut maxime. Est ad aut cum. Ut exercitationem non in fugiat.
+                    </p>
+                </div>
+            </div>
+            <!-- Test -->
+            <div class="c6 comment1 col-lg-8 col-md-12 col-sm-12 mt-3" id="comment-add"
+            data-aos="fade-up" data-aos-duration="900">
+            </div>
+            <!-- Test -->
+        </section>
+    <!-- End Comment  -->
+    <!-- Add Comment -->
+        <section class="addComment container col-lg-8 col-md-12 col-sm-12" id="addComment">
+        <h6>Add Your Comment</h6>
+        <div>
+            <div class="inputContainer">
+                <input required="required" class="inputField" id="Add_userName" placeholder="Username" type="text">
+                <label class="usernameLabel" for="inputField">Username</label>
+                <svg viewBox="0 0 448 512" class="userIcon">
+                    <path 
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z">
+                    </path>
+                </svg>
+            </div>
+            <div class="inputContainer">
+                <input required="required" class="inputField" id="Add_Comment" placeholder="Add Comment" type="text">
+                <label class="usernameLabel" for="inputField">Your Comment</label>
+            </div>
+            <button class="send-comment" id="send">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Send Comment</span>
+            </button>
+        </div>
+        </section>
+    <!-- End Comment -->
+    <!-- form -->
+        <form action="https://formspree.io/f/xoqzbpgg" method="POST" onsubmit="return formValidate()" class="validation container col-lg-8 col-md-12 col-sm-12 mt-5 mb-5 overflow-hidden" data-aos="zoom-in" data-aos-duration="900">
+        <h3 class="text-2xl fw-bold mb-3">
+            Contact-Us
+        </h3>
+        <p>
+            Your email address will not be published. Required fields are marked *
+        </p>
+        <div id="error"></div>
+        <div class="input2 row mb-4">
+            <div class="inputContainer">
+                <input required="required" id="username" class="inputField"  placeholder="Your name" type="text">
+                <label class="usernameLabel" for="inputField">Your name</label>
+                <svg viewBox="0 0 448 512" class="userIcon">
+                    <path 
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z">
+                    </path>
+                </svg>
+            </div>
+            <div class="inputContainer">
+                <input required="required" class="inputField" id="email" placeholder="Your E-mail" type="text">
+                <label class="usernameLabel" for="inputField">Your E-mail</label>
+                <svg class="userIcon" fill="#000000" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path 
+                        d="M1920 428.266v1189.54l-464.16-580.146-88.203 70.585 468.679 585.904H83.684l468.679-585.904-88.202-70.585L0 1617.805V428.265l959.944 832.441L1920 428.266ZM1919.932 226v52.627l-959.943 832.44L.045 278.628V226h1919.887Z" fill-rule="evenodd">
+                        </path> 
+                    </g>
+                </svg>
+                
+            </div>
+        </div>
+        <div class="inputContainer w-100 mb-5 mt-5">
+            <input required="required" class="inputField" placeholder="Your Website" type="text">
+            <label class="usernameLabel" for="inputField">Your Website</label>
+            <svg class="userIcon" fill="#18d26e" viewBox="-3 -3 36.00 36.00" xmlns="http://www.w3.org/2000/svg" stroke="#18d26e" stroke-width="0.8699999999999999" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+                <g 
+                    id="SVGRepo_bgCarrier" stroke-width="0">
+                </g>
+                <g 
+                    id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.3">
+                </g>
+                <g id="SVGRepo_iconCarrier">
+                    <path 
+                        d="M12.5 18h13c.277 0 .5.223.5.5s-.223.5-.5.5h-13c-.277 0-.5-.223-.5-.5s.223-.5.5-.5zm0-3h13c.277 0 .5.223.5.5s-.223.5-.5.5h-13c-.277 0-.5-.223-.5-.5s.223-.5.5-.5zm-7-2c-.822 0-1.5.678-1.5 1.5v5c0 .822.678 1.5 1.5 1.5h3c.822 0 1.5-.678 1.5-1.5v-5c0-.822-.678-1.5-1.5-1.5h-3zm0 1h3c.286 0 .5.214.5.5v5c0 .286-.214.5-.5.5h-3c-.286 0-.5-.214-.5-.5v-5c0-.286.214-.5.5-.5zm-3-6h25c.277 0 .5.223.5.5s-.223.5-.5.5h-25c-.277 0-.5-.223-.5-.5s.223-.5.5-.5zM7 6.5a.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5.5.5 0 0 1 .5-.5.5.5 0 0 1 .5.5zm-2 0a.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5.5.5 0 0 1 .5-.5.5.5 0 0 1 .5.5zm-2 0a.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5.5.5 0 0 1 .5-.5.5.5 0 0 1 .5.5zM1.5 4C.678 4 0 4.678 0 5.5v19c0 .822.678 1.5 1.5 1.5h27c.822 0 1.5-.678 1.5-1.5v-19c0-.822-.678-1.5-1.5-1.5h-27zm0 1h27c.286 0 .5.214.5.5v19c0 .286-.214.5-.5.5h-27c-.286 0-.5-.214-.5-.5v-19c0-.286.214-.5.5-.5z">
+                    </path>
+                </g>
+            </svg>
+        </div>         
+        <textarea class="Your-Comment h-16" placeholder="Your Comment*" id="YourComment" rows="3"></textarea>
+        <button class="b1">
+            <div class="svg-wrapper-1">
+                <div class="svg-wrapper">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                    </svg>
+                </div>
+            </div>
+            <span>Send</span>
+        </button>
+        </form>
+    <!-- Footer -->
+        <footer class="text-center text-lg-start text-muted pt-5 pb-4 overflow-hidden FooterSection">
+            <div class="container z-index">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div>
+                        <h3 class="ThreeFooter position-relative">
+                            <a href="http://127.0.0.1:5500/index.html" target="_blank">
+                            Three <span class="text-white fs-4">Academy</span>
+                            </a>
+                        </h3>
+                        </div>
+                        <div>
+                        <p class="text-white FooterP fw-light">
+                            Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-sm-5">
+                        <h5 class="Map text-uppercase text-white fw-bold mb-4 position-relative">
+                        map
+                        <p class="position-absolute"></p>
+                        </h5>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14441.341416510946!2d55.2844598!3d25.1919108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f690a0e86a23b%3A0x1f121fbbe9740803!2sIsoftHorizon%20Information%20Technology%20LLC!5e0!3m2!1sen!2seg!4v1683654339938!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="col-lg-3 col-md-6 Contact mb-sm-5">
+                        <h5 class="Map text-uppercase text-white fw-bold mb-4 position-relative">
+                        Contact us
+                        <p class="position-absolute"></p>
+                        </h5>
+                        <div class="w-100 PScoail">
+                        <p class="text-white mb-1 fw-light">
+                            <span class="fw-bold">Email: </span> Three_Academy@gmail.com
+                        </p>
+                        <p class="text-white  mb-1 fw-light">
+                            <span class="fw-bold">Phone: </span> (+20) 1001359575
+                        </p>
+                        <p class="text-white  mb-1 fw-light">
+                            <span class="fw-bold">Hotline: </span> 2291011
+                        </p>
+                        <p class="text-white  mb-1 fw-light">
+                            <span class="fw-bold">Address: </span>Empire Heights Business Center | P.O. -14656, | Tower B | - Dubai - United Arab Emirates
+                        </p>
+                        </div>
+                        <div class="row FooterIcon">
+                            <div class="col-lg-2">
+                                <a class="LinksSocial" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                            <div class="col-lg-2">
+                                <a class="LinksSocial" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <div class="col-lg-2">
+                                <a class="LinksSocial" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 Contact">
+                        <h5 class="Map text-uppercase text-white fw-bold mb-4 position-relative">
+                        Our Newsletter
+                        <p class="position-absolute"></p>
+                        </h5>
+                        <div>
+                        <p class="text-white FooterP fw-light">
+                            Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.
+                        </p>
+                        </div>
+                        <div>
+                        <form action="#" class="d-flex">
+                            <input type="text" class="border-0 InpText ps-2">
+                            <input type="submit" value="Subscribe" class="btn BtnFooter rounded-0">
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- Footer -->
+    <!--Star CopyRigth -->
+        <footer class="bg-black pt-5 pb-4 overflow-hidden">
+            <div class="d-grid text-center text-white Copyright">
+                <p>
+                    © Copyright Three <span>Academy</span>. All Rights Reserved
+                </p>
+                <p>
+                    Designed by <a href="#">Mohamd Naguib ❤, Ahmed Hesham ❤, Ahmed Atif ❤</a>
+                </p>
+                <p class="date" id="myClockDisplay" onload="showTime()"></p>
+            </div>
+        </footer>
+    <!--End CopyRigth -->
+
+
+        <!-- MDB -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <!-- Custom scripts -->
+        <script type="text/javascript"></script>
+        <!-- Boot strap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+        <!-- Aos Library -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- main js -->
+        <script src="js/test.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

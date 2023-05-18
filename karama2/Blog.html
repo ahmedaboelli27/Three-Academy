@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Blog</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- CDN bootstap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Aos Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+    <!-- links.css -->
+    <link rel="stylesheet" href="css/darkMode.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="body">
+    <!-- These two div is related to mouse animation -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor2"></div>
+    <!-- End Mous Animation  -->
+    <!-- Loader -->
+    <div class="loader-wrap col-lg-12 col-md-12 col-sm-12" id="loader-wrap">
+      <div class="loader container" id="loader"></div>
+    </div>
+    <!-- End Loader -->
+    <!-- Arrow -->
+    <div class="up" id="up"><i class="fa-solid fa-arrow-up fa-beat-fade fa-2xs"></i></div>
+    <!-- End Arrow -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-0 w-100 position-sticky top-0">
+    <div class="container-fluid">
+        <div class=" navbar-collapse HeaderThree " id="navbarSupportedContent">
+            <h1 class="navbar-brand mt-2 mt-lg-0 position-relative" href="#">
+            <a href="http://127.0.0.1:5500/index.html" class="navbarLogo">
+                Three <span class="text-white">Academy</span>
+            </a>
+            </h2>
+        </div>
+        <!-- Right elements -->
+        <div class="align-items-center justify-content-center AcademyLinks mt-3">
+            <ul id="Links" class="d-flex align-content-center justify-content-center gap-5 fw-bold">
+                <li><a class="nav-link scrollto" href="http://127.0.0.1:5500/index.html" target="_blank">Home</a></li>
+                <li><a class="nav-link scrollto" href="#about">About</a></li>
+                <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+                <!-- Dark And Light Mode -->
+                <li>
+                    <label class="switch">
+                        <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+                        <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+                        <input type="checkbox" class="input">
+                        <span class="slider"></span>
+                    </label>
+                </li>
+                <!-- End Dark And Light Mode -->
+                <li><a class="nav-link active" href="http://127.0.0.1:5500/karama2/Blog.html" target="_blank">Blog</a></li>
+            </ul>
+        </div>
+            <ul class="Links" data-aos="fade-down">
+                <li><a class="nav-link scrollto active" href="http://127.0.0.1:5500/index.html" target="_blank">Home</a></li>
+                <li><a class="nav-link scrollto" href="#about">About</a></li>
+                <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+                <!-- Dark And Light Mode -->
+                <li>
+                    <label class="switch">
+                        <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+                        <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+                        <input type="checkbox" class="input">
+                        <span class="slider"></span>
+                    </label>
+                </li>
+                <!-- End Dark And Light Mode -->
+                <li><a class="nav-link  " href="http://127.0.0.1:5500/karama2/Blog.html" target="_blank">Blog</a></li>
+            </ul>
+        <a class="IconDots" href="#" id="Link">
+            <span  class="dots position-absolute top-50"></span>
+        </a>
+        <!-- Right elements -->
+    </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="sec1 overflow-hidden" id="sec1" >    
+      <div class="container col-lg-12 col-md-12 col-sm-12">    
+          <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="http://127.0.0.1:5500/index.html" target="_blank">Home</a></li>
+              </ol>
+              <h2>Blog</h2>
+          </nav>
+      </div>
+    </section>
+    <!-- End Breadcrumbs -->
+    <main id="blog" class="blog">
+      <div class="container"> 
+        <div class="row">
+          <div class="side-left col-lg-8 entries" data-aos="fade-right" data-aos-duration="950">
+            <article class="entry">
+              <div class="entry-img">
+                <img src="img/blog-1.jpg" alt="" class="img-fluid">
+              </div>
+              <h2 class="entry-title">
+                <a href="#">The strength of a new learning academy can be explained in several ways. </a>
+              </h2>
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-person"></i>
+                      <a href="#">
+                        Eng-Mohammed Nagiub
+                      </a>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <a href="#">
+                      <time datetime="2020-01-01">
+                        May 06,2023
+                      </time>
+                    </a>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-comment"></i> 
+                    <a href="#">32 comments</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="entry-content">
+                <p>
+                  a new learning academy can attract highly qualified and motivated teachers who are eager to be part of a new and innovative educational institution. These teachers can bring fresh perspectives and ideas to the classroom, which can benefit students in many ways.
+                </p>
+                <div class="read-more">
+                  <a href="http://127.0.0.1:5500/karama2/A7MED/Blog-Single.html" target="_blank">Read More</a>
+                </div>
+              </div>
+            </article>
+            <!-- End blog entry -->
+            <article class="entry" data-aos="fade-up" data-aos-duration="900">
+              <div class="entry-img">
+                <img src="img/blog-2.jpg" alt="" class="img-fluid">
+              </div>
+              <h2 class="entry-title">
+                <a href="#">In addition to technical knowledge, a great photography instructor</a>
+              </h2>
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="fa-solid fa-person"></i> <a href="#">Eng- Abdulraman Alaa</a></li>
+                  <li class="d-flex align-items-center"><i class="fa-solid fa-calendar-days"></i> <a href="#"><time datetime="May 06,2023">Jan 25, 2023</time></a></li>
+                  <li class="d-flex align-items-center"><i class="fa-solid fa-comment"></i> <a href="#">102 comments</a></li>
+                </ul>
+              </div>
+              <div class="entry-content">
+                <p>
+                  their ability to effectively communicate the technical and artistic aspects of photography to their students. A good photography instructor should have a deep understanding of the technical aspects of photography, such as exposure, composition, and lighting, as well as a strong sense of creativity and artistic vision.
+                </p>
+                <div class="read-more">
+                  <a href="http://127.0.0.1:5500/karama2/A7MED/Blog-Single.html" target="_blank">Read More</a>
+                </div>
+              </div>
+            </article>
+            <!-- End blog entry -->
+            <article class="entry" data-aos="fade-up" data-aos-duration="900">
+              <div class="entry-img">
+                <img src="img/blog-3.jpg" alt="" class="img-fluid">
+              </div>
+              <h2 class="entry-title">
+                <a href="#">Success is not a one-person show. It takes a team of dedicated individuals working together towards a common goal to achieve greatness.</a>
+              </h2>
+              <div class="entry-meta" >
+                <ul>
+                  <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-person"></i> 
+                    <a href="#">Eng-Ahmed Atif</a>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <a href="#">
+                      <time datetime="2020-01-01">Feb 03, 2021</time>
+                    </a>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-comment"></i> 
+                    <a href="#">56 comments</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="entry-content">
+                <p>
+                  A strong team typically has members who have complementary skills and expertise, work well together, communicate effectively, and share a common goal or vision. They are able to collaborate and support each other to achieve their objectives. Additionally, a strong team is often led by a capable and effective leader who can motivate and guide the team towards success.
+                </p>
+                <div class="read-more">
+                  <a href="http://127.0.0.1:5500/karama2/A7MED/Blog-Single.html" target="_blank">Read More</a>
+                </div>
+              </div>
+            </article>
+            <!-- End blog entry -->
+            <article class="entry" data-aos="fade-up" data-aos-duration="900">
+              <div class="entry-img">
+                <img src="img/blog-4.jpg" alt="" class="img-fluid">
+              </div>
+              <h2 class="entry-title">
+                <a href="#">We have revolutionized the way we approach customer service.</a>
+              </h2>
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-person"></i>
+                    <a href="#">Eng- Carmela</a>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <a href="#">
+                      <time datetime="2020-01-01">Feb 06, 2021</time>
+                    </a>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="fa-solid fa-comment"></i>
+                    <a href="#">46comments</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="entry-content">
+                <p>
+                  As a web development service, we pride ourselves on delivering exceptional results that exceed our customers' expectations. Our team of experienced developers and designers work tirelessly to create custom solutions that are tailored to meet the unique needs of each of our clients. We use the latest technologies and industry best practices to ensure that our websites are fast, secure, and user-friendly. Our commitment to quality and customer satisfaction is unmatched, and we strive to build long-lasting relationships with our clients. When you choose us for your web development needs, you can rest assured that you are getting the best service in the industry.
+                </p>
+                <div class="read-more">
+                  <a href="http://127.0.0.1:5500/karama2/A7MED/Blog-Single.html" target="_blank">Read More</a>
+                </div>
+              </div>
+            </article>
+            <!-- End blog entry -->
+          </div>
+          <!-- End blog entries list -->
+          <!-- Blog sidebar -->
+          <div class=" side-bar col-lg-4 col-md-12 col-sm-12 overflow-hidden" data-aos="fade-down" data-aos-duration="950">
+            <div class="sidebar">
+              <div class="sidebar-item search-form">
+                <form action="">
+                  <input type="text" class="form-control" placeholder="Search" id="searchBox">
+                  <button type="submit"> <i class="bi bi-search"></i></button>
+                </form>
+              </div>
+              <!-- End sidebar search formn-->
+              <h3 class="sidebar-title overflow-hidden">Categories</h3>
+              <div class="sidebar-item categories">
+                <ul id="ul1">
+                  <li><a href="#">Creative  </a><span>  (8)</span></li>
+                  <li><a href="#">Web Design Services </a><span>  (16)</span></li>
+                  <li><a href="#">Responsive Website Development   </a><span>  (17)</span></li>
+                  <li><a href="#">E-commerce Solutions  </a><span>  (41)</span></li>
+                  <li><a href="#">Custom Web Application Development  </a><span>  (9)</span></li>
+                  <li><a href="#">Design  </a><span>  (22)</span></li>
+                  <li><a href="#">Mobile App Development  </a><span>  (33)</span></li>
+                  <li><a href="#">UI/UX Design Services  </a><span>  (25)</span></li>
+                  <li><a href="#">General  </a><span>  (25)</span></li>
+                  <li><a href="#">Backend Development  </a><span>  (24)</span></li>
+                  <li><a href="#">Frontend Development  </a><span>  (29)</span></li>
+                  <li><a href="#">Lifestyle  </a><span>  (12)</span></li>
+                  <li><a href="#">CMS Development  </a><span>  (30)</span></li>
+                  <li><a href="#">Mobile App Design  </a><span>  (14)</span></li>
+                  <li><a href="#">Website Maintenance Services  </a><span>  (11)</span></li>
+                  <li><a href="#">E-commerce Platform Development  </a><span>  (5)</span></li>
+                  <li><a href="#">Cross-platform App Development   </a><span>  (5)</span></li>
+                  <li><a href="#">SEO Services   </a><span>  (5)</span></li>
+                </ul>
+              </div>
+            <!-- End sidebar categories-->
+              <h3 class="sidebar-title overflow-hidden">Recent Posts</h3>
+              <div class="posts">
+                <div class="flex">
+                    <img src="img/blog-recent-1.jpg" alt="Image">
+                    <div class="posts_text">    
+                        <p class="text-md fw-bold"><a href="#"> Nihil blanditiis at in nihil autem</a></p>
+                        <span class="fst-italic">Jan 1, 2020</span>
+                    </div>
+                </div>
+                <div class="flex">
+                    <img src="img/blog-recent-2.jpg" alt="Image">
+                    <div class="posts_text">    
+                        <p class="text-md fw-bold"><a href="#"> Quidem autem et impedit</a></p>
+                        <span class="fst-italic">Jan 1, 2020</span>
+                    </div>
+                </div>
+                <div class="flex">
+                    <img src="img/blog-recent-3.jpg" alt="Image">
+                    <div class="posts_text">    
+                        <p class="text-md fw-bold"><a href="#"> Id quia et et ut maxime similique occaecati ut</a></p>
+                        <span class="fst-italic">Jan 1, 2020</span>
+                    </div>
+                </div>
+                <div class="flex">
+                    <img src="img/blog-recent-4.jpg" alt="Image">
+                    <div class="posts_text">    
+                        <p class="text-md fw-bold"><a href="#"> Laborum corporis quo dara net para </a></p>
+                        <span class="fst-italic">Jan 1, 2020</span>
+                    </div>
+                </div>
+                <div class="flex">
+                    <img src="img/blog-recent-5.jpg" alt="Image">
+                    <div class="posts_text">    
+                        <p class="text-md fw-bold"><a href="#"> Et dolores corrupti quae illo quod dolor</a></p>
+                        <span class="fst-italic">Jan 1, 2020</span>
+                    </div>
+                </div>
+              </div>
+              <!-- End sidebar recent posts-->
+              <h3 class="sidebar-title">Tags</h3>
+              <div class="sidebar-item tags">
+                <ul>
+                  <li><a href="#">App</a></li>
+                  <li><a href="#">IT</a></li>
+                  <li><a href="#">Business</a></li>
+                  <li><a href="#">Mac</a></li>
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">Office</a></li>
+                  <li><a href="#">Creative</a></li>
+                  <li><a href="#">Studio</a></li>
+                  <li><a href="#">Smart</a></li>
+                  <li><a href="#">Tips</a></li>
+                  <li><a href="#">Marketing</a></li>
+                </ul>
+              </div>
+              <!-- End sidebar tags-->
+            </div>
+            <!-- End sidebar -->
+          </div>
+          <!-- End blog sidebar -->
+        </div>
+      </div>
+    </main>
+    <!-- ======= Start of validation form by receiving email ======= -->
+    <form action="https://formspree.io/f/xoqzbpgg" method="POST" onsubmit="return formValidate()" class="validation container col-lg-8 col-md-12 col-sm-12 mt-5 mb-5 " data-aos="zoom-in" data-aos-duration="900"> 
+      <h3 class="text-2xl fw-bold mb-3">
+        Contact-Us
+      </h3>
+      <p>
+          Your email address will not be published. Required fields are marked *
+      </p>
+      <div id="error"></div>
+      <div class="input2 row mb-4">
+          <div class="inputContainer">
+              <input required="required" id="username" class="inputField"  placeholder="Your name" type="text">
+              <label class="usernameLabel" for="inputField">Your name</label>
+              <svg viewBox="0 0 448 512" class="userIcon">
+                  <path 
+                  d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z">
+                  </path>
+              </svg>
+          </div>
+          <div class="inputContainer">
+              <input required="required" class="inputField" id="email" placeholder="Your E-mail" type="text">
+              <label class="usernameLabel" for="inputField">Your E-mail</label>
+              <svg class="userIcon" fill="#000000" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                      <path 
+                      d="M1920 428.266v1189.54l-464.16-580.146-88.203 70.585 468.679 585.904H83.684l468.679-585.904-88.202-70.585L0 1617.805V428.265l959.944 832.441L1920 428.266ZM1919.932 226v52.627l-959.943 832.44L.045 278.628V226h1919.887Z" fill-rule="evenodd">
+                      </path> 
+                  </g>
+              </svg>  
+          </div>
+      </div>
+      <div class="inputContainer w-100 mb-5 mt-5">
+          <input required="required" class="inputField" placeholder="Your Website" type="text">
+          <label class="usernameLabel" for="inputField">Your Website</label>
+          <svg class="userIcon" fill="#18d26e" viewBox="-3 -3 36.00 36.00" xmlns="http://www.w3.org/2000/svg" stroke="#18d26e" stroke-width="0.8699999999999999" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+              <g 
+                  id="SVGRepo_bgCarrier" stroke-width="0">
+              </g>
+              <g 
+                  id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.3">
+              </g>
+              <g id="SVGRepo_iconCarrier">
+                  <path 
+                      d="M12.5 18h13c.277 0 .5.223.5.5s-.223.5-.5.5h-13c-.277 0-.5-.223-.5-.5s.223-.5.5-.5zm0-3h13c.277 0 .5.223.5.5s-.223.5-.5.5h-13c-.277 0-.5-.223-.5-.5s.223-.5.5-.5zm-7-2c-.822 0-1.5.678-1.5 1.5v5c0 .822.678 1.5 1.5 1.5h3c.822 0 1.5-.678 1.5-1.5v-5c0-.822-.678-1.5-1.5-1.5h-3zm0 1h3c.286 0 .5.214.5.5v5c0 .286-.214.5-.5.5h-3c-.286 0-.5-.214-.5-.5v-5c0-.286.214-.5.5-.5zm-3-6h25c.277 0 .5.223.5.5s-.223.5-.5.5h-25c-.277 0-.5-.223-.5-.5s.223-.5.5-.5zM7 6.5a.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5.5.5 0 0 1 .5-.5.5.5 0 0 1 .5.5zm-2 0a.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5.5.5 0 0 1 .5-.5.5.5 0 0 1 .5.5zm-2 0a.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5.5.5 0 0 1 .5-.5.5.5 0 0 1 .5.5zM1.5 4C.678 4 0 4.678 0 5.5v19c0 .822.678 1.5 1.5 1.5h27c.822 0 1.5-.678 1.5-1.5v-19c0-.822-.678-1.5-1.5-1.5h-27zm0 1h27c.286 0 .5.214.5.5v19c0 .286-.214.5-.5.5h-27c-.286 0-.5-.214-.5-.5v-19c0-.286.214-.5.5-.5z">
+                  </path>
+              </g>
+          </svg>
+      </div>         
+      <textarea class="Your-Comment h-16" id="message" placeholder="Your Comment*" rows="3"></textarea>
+      <button class="b1">
+          <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                  <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                  </svg>
+              </div>
+          </div>
+          <span>Send</span>
+      </button>
+    </form>
+    <!-- ======= End of validation form by receiving email ======= -->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-muted pt-5 pb-4 overflow-hidden FooterSection">
+      <div class="container z-index">
+          <div class="row">
+              <div class="col-lg-3 col-md-6">
+                  <div>
+                  <h3 class="ThreeFooter position-relative">
+                      <a href="http://127.0.0.1:5500/index.html" target="_blank">
+                      Three <span class="text-white fs-4">Academy</span>
+                      </a>
+                  </h3>
+                  </div>
+                  <div>
+                  <p class="text-white FooterP fw-light">
+                      Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.
+                  </p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-sm-5">
+                  <h5 class="Map text-uppercase text-white fw-bold mb-4 position-relative">
+                  map
+                  <p class="position-absolute"></p>
+                  </h5>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14441.341416510946!2d55.2844598!3d25.1919108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f690a0e86a23b%3A0x1f121fbbe9740803!2sIsoftHorizon%20Information%20Technology%20LLC!5e0!3m2!1sen!2seg!4v1683654339938!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+              </div>
+              <div class="col-lg-3 col-md-6 Contact mb-sm-5">
+                  <h5 class="Map text-uppercase text-white fw-bold mb-4 position-relative">
+                  Contact us
+                  <p class="position-absolute"></p>
+                  </h5>
+                  <div class="w-100 PScoail">
+                  <p class="text-white mb-1 fw-light">
+                      <span class="fw-bold">Email: </span> Three_Academy@gmail.com
+                  </p>
+                  <p class="text-white  mb-1 fw-light">
+                      <span class="fw-bold">Phone: </span> (+20) 1001359575
+                  </p>
+                  <p class="text-white  mb-1 fw-light">
+                      <span class="fw-bold">Hotline: </span> 2291011
+                  </p>
+                  <p class="text-white  mb-1 fw-light">
+                      <span class="fw-bold">Address: </span>Empire Heights Business Center | P.O. -14656, | Tower B | - Dubai - United Arab Emirates
+                  </p>
+                  </div>
+                  <div class="row FooterIcon">
+                      <div class="col-lg-2">
+                          <a class="LinksSocial" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                      </div>
+                      <div class="col-lg-2">
+                          <a class="LinksSocial" href="#"><i class="fa-brands fa-github"></i></a>
+                      </div>
+                      <div class="col-lg-2">
+                          <a class="LinksSocial" href="#"><i class="fa-brands fa-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 Contact">
+                  <h5 class="Map text-uppercase text-white fw-bold mb-4 position-relative">
+                  Our Newsletter
+                  <p class="position-absolute"></p>
+                  </h5>
+                  <div>
+                  <p class="text-white FooterP fw-light">
+                      Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.
+                  </p>
+                  </div>
+                  <div>
+                  <form action="#" class="d-flex">
+                      <input type="text" class="border-0 InpText ps-2">
+                      <input type="submit" value="Subscribe" class="btn BtnFooter rounded-0">
+                  </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!--Star CopyRigth -->
+    <footer class="bg-black pt-5 pb-4">
+      <div class="d-grid text-center text-white Copyright">
+        <p>
+          © Copyright Three <span>Academy</span>. All Rights Reserved
+        </p>
+        <p>
+          Designed by <a href="#">Eng-Mohamd Naguib ❤, Eng-Ahmed Karama ❤, Eng-Ahmed Atif ❤</a>
+        </p>
+        <p class="date" id="myClockDisplay" onload="showTime()"></p>
+      </div>
+    </footer>
+    <!--End CopyRigth -->
+
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+    <!-- Boot strap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <!-- Aos Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("kt6gmJDhZcf0JAAsI");
+        })();
+    </script>
+    <script src="js/test.js"></script>
+  </body>
+</html>

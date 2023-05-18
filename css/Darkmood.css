@@ -1,0 +1,133 @@
+/* Start DarkMood */
+.DarkMood {
+    background-color: #010a18;
+    transition: var(--mainTransition);
+}
+.DarkMood .navbarSwitch {
+    background-color: #010a18ef;
+}
+.DarkMood .navbar .container-fluid .UlLinks {
+    background-color: #010a18e8;
+}
+.DarkMood .navbar .container-fluid .UlLinks li {
+    color: #fff !important;
+}
+/* Section Card */
+.DarkMood .ThreeCard {
+    background-color: #010a18 !important;
+    transition: var(--mainTransition);
+}
+.DarkMood .ThreeCard .col-lg-4 {
+    border-radius: 8px;
+}
+.DarkMood .ThreeCard .CardTwo {
+    background-image: linear-gradient(0deg, #010a18 0%, #1d1c1c 50%, #010a18 100%)  !important;
+    transition: var(--mainTransition);
+}
+.DarkMood .ThreeCard p {
+    color: #6e6c6c !important;
+}
+/* Section Card */
+
+/* Section */
+.DarkMood .SectionAbout::before,
+.DarkMood .SectionOurClients::before {
+    background-color: #010a18f3;
+    transition: var(--mainTransition);
+}
+.DarkMood .ContentWebSite h3 {
+    color: #fff !important;
+}
+.DarkMood .SectionAbout .Z-Index .card,
+.DarkMood .SectionPortfolio .card {
+    background-color: #010a18;
+    border: 2px solid #0ce0ff;
+    transition: var(--mainTransition);
+}
+
+.DarkMood .SectionAbout .Z-Index .card h5 a {
+    color: #fff !important;
+    transition: var(--mainTransition);
+}
+.DarkMood .SectionServices h5 {
+    color: #fff ;
+}
+.DarkMood .SectionServices .d-flex:hover h5 {
+  color: var(--mainColor);
+  transition: var(--mainTransition);
+}
+.DarkMood .SectionAbout .Z-Index .card p,
+.DarkMood .ContentWebSite p,
+.DarkMood .SectionServices p,
+.DarkMood .SectionFacts .col-md-6 p  {
+    color: #6e6c6c !important;
+}
+.DarkMood .SectionFacts::before {
+    background-color: #010a18f3;
+    transition: var(--mainTransition);
+}
+.DarkMood .SectionPortfolio {
+    background-color: #010a18 ;
+    transition: var(--mainTransition);
+}
+.DarkMood .SectionPortfolio .card,
+.DarkMood .SectionTeam .card {
+    border: 2px solid #0ce0ff;
+}
+.DarkMood .SectionPortfolio .card img {
+    padding: 15px;
+}
+.DarkMood .SectionPortfolio .card h5 {
+    color: #fff;
+}
+.DarkMood  .testimonial {
+    background-color: #010a18;
+    transition: var(--mainTransition);
+}
+.DarkMood  .testimonial .slide h3 {
+    color: #fff !important;
+}
+.DarkMood  .testimonial .slide h1,
+.DarkMood  .testimonial .slide p,
+.DarkMood .SectionTestimonial .SliderTwo p {
+    color: #6e6c6c !important;
+}
+.DarkMood  .testimonial .slide .Devo {
+    color: var(--mainColor) !important;
+}
+.DarkMood .testimonial .row .tabs li figure::after {
+    border: 4px solid var(--mainColor);
+}
+.DarkMood  .testimonial .row .carousel .carousel-indicators li {
+    background: var(--mainColor);
+    transition: var(--mainTransition);
+    background-clip: padding-box;
+    height: 2px;
+}
+.DarkMood .SectionTestimonial  {
+    background-color: #010a18;
+    transition: var(--mainTransition);
+}
+.DarkMood .SectionTestimonial swiper-slide .text-black {
+    color: #fff !important;
+}
+.DarkMood .SectionTeam::before {
+    background-color: #010a18e0;
+}
+.DarkMood .FooterSection {
+    background-image: url(/img/site-footer-bg.png);
+    background-size: cover;
+    position: relative;
+}
+.DarkMood .FooterSection::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #010a18e0;
+    z-index: 9;
+    transition: var(--mainTransition);
+}
+/* End DarkMood */
