@@ -1242,6 +1242,9 @@ main {
   padding: 60px 0;
   overflow: hidden;
 }
+.SectionTeam a {
+  color: white;
+}
 .SectionTeam::before {
   content: "";
   position: absolute;
