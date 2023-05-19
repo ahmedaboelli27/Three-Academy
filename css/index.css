@@ -1295,10 +1295,10 @@ main {
   transition: var(--mainTransition);
 }
 .SectionTeam .card .IconTeam .fa-linkedin:hover {
-  color:  rgb(10, 102, 194);
+  color:  rgb(10, 191, 194);
 }
-.SectionTeam .card .IconTeam .fa-twitter:hover {
-  color: rgb(5, 228, 228);
+.SectionTeam .card .IconTeam .fa-facebook:hover {
+  color: rgb(10, 102, 194);
 }
 .SectionTeam .card .IconTeam .fa-instagram:hover {
   color: rgb(255, 117, 117);

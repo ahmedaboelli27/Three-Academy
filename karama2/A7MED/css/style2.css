@@ -1069,6 +1069,21 @@ button.send-comment .button-text {
         width: 40px;
         height: 40px;
     }
+    .addComment {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .addComment h6 {
+        margin-bottom: 50px;
+    }
+    .addComment input {
+        margin: 30px 0 30px 0;
+    }
+
+
     .validation h3 {
         font-size: 16px;
     }
@@ -1129,12 +1144,38 @@ button.send-comment .button-text {
     .comment1 .reply {
         font-size: 14px;
     }
+    .addComment {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .addComment h6 {
+        margin-bottom: 50px;
+    }
+    .addComment input {
+        margin: 30px 0 30px 0;
+    }
 
 }
 @media only screen and (min-width : 768px) and (max-width : 912px) {
     .blog_single {
         display: block;
     }
+    /* .addComment {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .addComment h6 {
+        margin-bottom: 50px;
+    }
+    .addComment input {
+        margin: 30px 0 30px 0;
+    } */
 }
 @media only screen and (min-width : 600px) and (max-width : 768px) {
     .blog_single {
@@ -1157,6 +1198,19 @@ button.send-comment .button-text {
         top: 2%;
         left: 2%;
     }
+    /* .addComment {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .addComment h6 {
+        margin-bottom: 50px;
+    }
+    .addComment input {
+        margin: 30px 0 30px 0;
+    } */
 }
 
 
